@@ -10,11 +10,11 @@ function fecthPost(){
 }
 function mostrarPosts(posts){
     const containerPosts = document.getElementById('posts');
-    posts.forEach(post => {
+    posts.forEach((post, index) => {
         const thumbImageSrc = post.thumbImage.startsWith('/') ? `https://api-rest-post-diegocandido.herokuapp.com${post.thumbImage}` : post.thumbImage;
         const profileThumbImageSrc = post.profileThumbImage.startsWith('/') ? `https://api-rest-post-diegocandido.herokuapp.com${post.profileThumbImage}` : post.profileThumbImage;
         const postHTML = `
-        <div id ="post">
+        <div id ="post" onclick="mostrarUmPost(${index})">
         <img id="thumbImage" src="${thumbImageSrc}" alt="${post.thumbImageAltText}">
             <div id="cimaPost">
                 <h2>${post.title}</h2>
@@ -24,5 +24,8 @@ function mostrarPosts(posts){
         </div>`;
         containerPosts.innerHTML += postHTML;
     });
+}
+function mostrarUmPost(index) {
+    window.location.href = `index2.html?id=${index}`;
 }
 fecthPost();

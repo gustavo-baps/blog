@@ -196,3 +196,27 @@ body{
     margin-top: 0.5vw;
     margin-left: 0.5vw;
 }
+#previsao2{
+    width: 26vw;
+    height: 19.5vw;
+    background-color: #303030;
+    border: 0.03vw solid #202020;
+    margin-left: -20vw;
+    margin-top: 3vw;
+    border-radius: 0.4vw;
+    padding: 0;
+}
+#previsao2 h2{
+    font-size: 1.5vw;
+    font-weight: 550;
+    margin-top: 1.2vw;
+    margin-left: 1.5vw;
+    margin-bottom: 1vw;
+}
+#previsao2 h3{
+    margin-top: 1.5vw;
+    margin-left: 1.3vw;
+    font-size: 1.5vw;
+}
+
+

@@ -1,4 +1,4 @@
-function fecthPost(){
+function fetchPost(){
     const url = 'https://api-rest-post-diegocandido.herokuapp.com/postagens/';
 
     fetch(url)
@@ -28,4 +28,4 @@ function mostrarPosts(posts){
 function mostrarUmPost(index) {
     window.location.href = `index2.html?id=${index}`;
 }
-fecthPost();
+fetchPost();

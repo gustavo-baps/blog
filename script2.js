@@ -15,7 +15,8 @@ function fetchUnicoPost(index){
 function mostrarUmPost(post){
     const containerPost = document.getElementById('postUnico');
     const thumbImageSrc = post.thumbImage.startsWith('/') ? `https://api-rest-post-diegocandido.herokuapp.com${post.thumbImage}` : post.thumbImage;
-    const postHTML = `<div id ="post" >
+    const postHTML = `
+    <div id ="post">
     <img id="thumbImage" src="${thumbImageSrc}" alt="${post.thumbImageAltText}">
         <div id="cimaPost">
             <h2>${post.title}</h2>
